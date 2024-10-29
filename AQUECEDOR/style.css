@@ -1,0 +1,51 @@
+:root {
+    --CABEÇALHO-COR-: #EBECEE;
+}
+
+body {
+    background-color: var(--CABEÇALHO-COR-);
+}
+
+.cabeçalho {
+    background-color: white;
+}
+
+.cabeçalho-menu-3pauzin {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../Img/Menu.svg);
+}
+
+.cabeçalho {
+    background-color: var(--Branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separação {
+    display: flex;
+    align-items: center;
+
+}
+
+.imagem-separada {
+    padding: 1em
+}
+
+.menu-burg {
+    width: 24px;
+    height: 24px;
+}
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --Branco: #FFFFFF;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}

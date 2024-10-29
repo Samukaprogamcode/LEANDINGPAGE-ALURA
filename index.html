@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamukaBook</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="reset.css"> <!--RESET CSS COMANDO BASE PARA RESETAR FABRICAÇÃO DE NAVEGADOR-->
+    <link rel="stylesheet" href="Styles/banner.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/carrossel.css">
+    <link rel="stylesheet" href="Styles/topicos.css">
+    <link rel="stylesheet" href="Styles/contato.css">
+    <link rel="stylesheet" href="Styles/rodape.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <!--DIV SEPARAÇÃO POR BLOCO E SPAN É INLINE (POR LINHA)-->
+        <div class="separação">
+            <!--input tag de asinalar-->
+            <input type="checkbox" id="menu" class="botão">
+            <!--label tag complementar de INPUT-->
+            <label for="menu">
+                <span class="cabeçalho-menu-3pauzin imagem-separada"></span>
+            </label>
+            <!--tag UL e LI usados para criação de listas-->
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">CATEGORIAS</li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">PROGRAMAÇÃO</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">FRONT</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">BACK</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">AREA DO ALUNO</a>
+                </li>
+
+            </ul>
+            <img src="Img/Logo.svg" alt="LOGO ALURA" class="imagem-separada">
+        </div>
+
+        <div class="separação">
+            <a href="#"><img src="Img/Favoritos.svg" alt="Meus Favoritos" class="imagem-separada"></a>
+            <a href="#"><img src="Img/Compras.svg" alt="Carrinho de compras" class="imagem-separada"></a>
+            <a href="AQUECEDOR/aquecedor.html"> <img src="Img/Usuario.svg" alt="Meu perfil" class="imagem-separada"></a>
+        </div>
+    </header>
+    <!--section serve para separar topicos na pagina-->
+    <!--PARTE DE PESQUISA EM BAIXO DO CABEÇALHO-->
+
+    <section class="banner">
+        <h2 class="banner_titulo">Ja sabe por onde começar ?</h2>
+        <p class="banner_texto"> Encontre em nossas estante o que precisa para seu desenvolvimento!</p>
+        <!--IMPUT SENDO USADO COMO CAIXA DE PESQUISA-->
+        <input type="search" class="banner_pesquisa" placeholder="qual será sua proxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Lançamentos Novos:</h2>
+
+
+        <!--importando carrosel do SWIPER-->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Img/ApacheKafka.svg" alt="primeiro livro"></div>
+                <div class="swiper-slide"><img src="Img/Liderança.svg" alt="segundo livro"></div>
+                <div class="swiper-slide"><img src="Img/Javascript.svg" alt="terceiro livro"></div>
+                <div class="swiper-slide"><img src="Img/Guia Front-end.svg" alt="quarto livro"></div>
+                <div class="swiper-slide"><img src="Img/Portugol.svg" alt="quinto livro"></div>
+                <div class="swiper-slide"><img src="Img/Acessibilidade.svg" alt="sexto livro"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--topico de sugestão de livro saiba mais-->
+        <section>
+            <div class="card">
+                <div class="card_descricao">
+                    <div class="descricao">
+                        <h3 class="descricao_titulo"> talvez voce tambem se interesse por...</h3>
+                        <h2 class="descricao_titulo-livro"> Angular 11 e firebase</h2>
+                        <p class="descricao_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consequuntur id
+                            inventore adipisci unde numquam reiciendis atque facere ipsum veritatis. Numquam a ab,
+                            doloremque laborum recusandae repellat laboriosam quaerat alias assumenda.</p>
+                    </div>
+                    <img src="Img/Angular.svg" class="descricao_imagem">
+                </div>
+
+                <div class="card_botao">
+                    <ul class="botões">
+                        <li class="botões_item"> <img src="Img/Favoritos.svg" alt="favoritar">
+                        <li class="botões_item"> <img src="Img/Compras.svg" alt="carrinho de compras">
+                        </li>
+                    </ul>
+                    <a href="#" class="botões_ancora">CONFIRA JÁ</a>
+                </div>
+        </section>
+
+
+        <!--OBS: SESSÕES SEPARADAS OBRIGATORIAMENTE POR SECTION====- "TOPICOS ACESSADOS RECENTEMENTE"-->
+        <section class="tópicos">
+            <h2 class="topicos_titulo">TÓPICOS ACESSADOS RECENTEMENTE</h2>
+            <ul class="topicos_lista">
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Android</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Marketing Digital</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Agile</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Startups</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Html e Css</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Python</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">OQ</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Java</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contatos">
+            <!--TITULO DA SECTION H2-->
+            <h2 class="contato_titulo">Fique por dentro de todas as novidades!</h2>
+            <p class="contato_texto"> Atualizações de e-books, novos, livros e promoções e outros.</p>
+            <!--IMPUT: CAMPO DE ESCRITA-->
+            <input type="email" placeholder="cadastre seu email" class="contato_email">
+        </section>
+        <hr />
+        <footer>
+            <h2 class="rodape">GRUPO ALURA</h2>
+        </footer>
+
+    </section>
+    <!--COMANDO JAVASCRIPT CARROSEL DE IMAGENS SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>

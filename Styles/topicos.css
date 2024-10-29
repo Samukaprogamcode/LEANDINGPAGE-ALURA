@@ -1,0 +1,35 @@
+.tópicos {
+    background-color: rgb(30, 45, 116);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos_titulo {
+    color: white;
+    font-weight: 300;
+
+}
+
+.topicos_lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos_item {
+    margin: 2em 0.5em;
+}
+
+.topicos_link {
+    color: white;
+    padding: 1em;
+    background-color: orange;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.topicos_link:hover {
+    background-color: white;
+    color: orange;
+}
